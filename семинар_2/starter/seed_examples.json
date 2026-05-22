@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Анна Соколова",
+    "age": 32,
+    "city": "Москва",
+    "income_rub": 180000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "косметика"
+  },
+  {
+    "name": "Игорь Петров",
+    "age": 54,
+    "city": "Новосибирск",
+    "income_rub": 95000,
+    "occupation": "инженер",
+    "shopping_frequency": "иногда",
+    "preferred_category": "товары для дома"
+  },
+  {
+    "name": "Дарья Кузнецова",
+    "age": 21,
+    "city": "Казань",
+    "income_rub": 45000,
+    "occupation": "студент",
+    "shopping_frequency": "редко",
+    "preferred_category": "одежда"
+  }
+]
