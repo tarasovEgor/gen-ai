@@ -1,0 +1,43 @@
+{
+  "fixed_literal_used": [
+    "ads",
+    "design",
+    "performance",
+    "price",
+    "reliability",
+    "support"
+  ],
+  "dynamic_used": [
+    "ads_promotions",
+    "biometrics_auth",
+    "design",
+    "notifications",
+    "offline_mode",
+    "performance",
+    "price_fees",
+    "qr_payments",
+    "reliability_bugs",
+    "subscriptions",
+    "support"
+  ],
+  "genuinely_new_not_in_literal": [
+    "biometrics_auth",
+    "notifications",
+    "offline_mode",
+    "qr_payments",
+    "subscriptions"
+  ],
+  "renamed_literal_aspects": {
+    "performance": "performance",
+    "design": "design",
+    "support": "support",
+    "price": "price_fees",
+    "ads": "ads_promotions",
+    "reliability": "reliability_bugs"
+  },
+  "literal_unused_in_fixed": [],
+  "fixed_count": 6,
+  "dynamic_count": 11,
+  "discovered_theme_count": 11,
+  "mode": "offline_keyword_remap"
+}

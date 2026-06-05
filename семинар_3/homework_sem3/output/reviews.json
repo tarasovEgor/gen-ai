@@ -1,0 +1,771 @@
+[
+  {
+    "author": "anna_k_92",
+    "rating": 2,
+    "platform": "android",
+    "review_date": "2025-03-12",
+    "app_version": "4.8.1",
+    "issues": [
+      {
+        "category": "reliability",
+        "severity": 5,
+        "quote": "Приложение постоянно вылетает при переводе по СБП"
+      },
+      {
+        "category": "support",
+        "severity": 4,
+        "quote": "Поддержка отвечает шаблонами через 2 дня"
+      },
+      {
+        "category": "price",
+        "severity": 3,
+        "quote": "За подписку Плюс 199 руб/мес не вижу смысла"
+      }
+    ],
+    "competitor_mentions": [
+      "Тинькофф"
+    ]
+  },
+  {
+    "author": "dmitry_moscow",
+    "rating": 5,
+    "platform": "ios",
+    "review_date": "2025-04-01",
+    "app_version": "4.9.0",
+    "issues": [
+      {
+        "category": "design",
+        "severity": 1,
+        "quote": "Обновили дизайн — стало намного приятнее, тёмная тема наконец нормальная"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "olga_spb",
+    "rating": 3,
+    "platform": "rustore",
+    "review_date": "2025-02-28",
+    "app_version": "4.7.3",
+    "issues": [
+      {
+        "category": "design",
+        "severity": 3,
+        "quote": "Интерфейс перегружен кнопками, новичку сложно найти историю операций"
+      },
+      {
+        "category": "ads",
+        "severity": 3,
+        "quote": "Реклама кредитов в ленте раздражает — каждый раз при входе баннер «Возьми 500 000»"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "ivan_dev",
+    "rating": 1,
+    "platform": "android",
+    "review_date": "2025-05-15",
+    "app_version": "5.0.2",
+    "issues": [
+      {
+        "category": "reliability",
+        "severity": 5,
+        "quote": "После обновления 5.0.2 приложение не открывается на Xiaomi Redmi Note 11"
+      },
+      {
+        "category": "support",
+        "severity": 5,
+        "quote": "Написал в чат — жду ответа уже неделю"
+      }
+    ],
+    "competitor_mentions": [
+      "Сбер"
+    ]
+  },
+  {
+    "author": "marina_1988",
+    "rating": 4,
+    "platform": "ios",
+    "review_date": "2025-01-20",
+    "app_version": "4.6.0",
+    "issues": [
+      {
+        "category": "price",
+        "severity": 3,
+        "quote": "комиссия 1% за перевод на карту другого банка, дороговато"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "alex_nsk",
+    "rating": 2,
+    "platform": "android",
+    "review_date": "2025-04-18",
+    "app_version": "4.9.1",
+    "issues": [
+      {
+        "category": "ads",
+        "severity": 4,
+        "quote": "Реклама навязчивая: push-уведомления про кредиты 3-4 раза в день"
+      },
+      {
+        "category": "performance",
+        "severity": 4,
+        "quote": "Скорость загрузки главного экрана 8-10 секунд на 4G"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "petr_kazan",
+    "rating": 5,
+    "platform": "rustore",
+    "review_date": "2025-03-05",
+    "app_version": "4.8.0",
+    "issues": [
+      {
+        "category": "design",
+        "severity": 1,
+        "quote": "Дизайн скромный, но понятный"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "elena_voronezh",
+    "rating": 3,
+    "platform": "android",
+    "review_date": "2025-02-10",
+    "app_version": "4.7.0",
+    "issues": [
+      {
+        "category": "reliability",
+        "severity": 3,
+        "quote": "Биометрия то работает, то просит пароль заново после каждого обновления"
+      },
+      {
+        "category": "support",
+        "severity": 3,
+        "quote": "Поддержка по телефону — 40 минут ожидания"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "sergey_tula",
+    "rating": 1,
+    "platform": "ios",
+    "review_date": "2025-05-20",
+    "app_version": "5.0.3",
+    "issues": [
+      {
+        "category": "price",
+        "severity": 5,
+        "quote": "Списали 299 рублей за подписку, которую я не оформлял"
+      },
+      {
+        "category": "support",
+        "severity": 5,
+        "quote": "Чат поддержки молчит третий день"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "natasha_ufa",
+    "rating": 4,
+    "platform": "android",
+    "review_date": "2025-04-25",
+    "app_version": "4.9.2",
+    "issues": [
+      {
+        "category": "performance",
+        "severity": 2,
+        "quote": "Иногда подвисает при скролле длинной истории"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "andrey_samara",
+    "rating": 2,
+    "platform": "rustore",
+    "review_date": "2025-01-15",
+    "app_version": "4.5.9",
+    "issues": [
+      {
+        "category": "reliability",
+        "severity": 4,
+        "quote": "QR-оплата часто не сканирует"
+      },
+      {
+        "category": "design",
+        "severity": 3,
+        "quote": "Дизайн устаревший, иконки мелкие"
+      },
+      {
+        "category": "performance",
+        "severity": 3,
+        "quote": "версия отстаёт на 2 релиза от Google Play — фичи появляются с задержкой"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "kate_msk",
+    "rating": 5,
+    "platform": "ios",
+    "review_date": "2025-05-01",
+    "app_version": "5.0.0",
+    "issues": [
+      {
+        "category": "support",
+        "severity": 1,
+        "quote": "Поддержка в Telegram-боте отвечает мгновенно"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "viktor_omsk",
+    "rating": 3,
+    "platform": "android",
+    "review_date": "2025-03-22",
+    "app_version": "4.8.2",
+    "issues": [
+      {
+        "category": "reliability",
+        "severity": 5,
+        "quote": "Платёж по QR завис на «обработке» 20 минут, деньги списались, магазин не получил"
+      },
+      {
+        "category": "support",
+        "severity": 3,
+        "quote": "Пришлось звонить на горячую линию"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "irina_krasnodar",
+    "rating": 2,
+    "platform": "android",
+    "review_date": "2025-04-10",
+    "app_version": "4.9.0",
+    "issues": [
+      {
+        "category": "ads",
+        "severity": 4,
+        "quote": "Слишком много рекламы страховок и инвестиций — целый экран при входе"
+      },
+      {
+        "category": "performance",
+        "severity": 4,
+        "quote": "Производительность на старом телефоне Honor 9 — 15 секунд загрузка, потом лаги"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "mikhail_perm",
+    "rating": 4,
+    "platform": "ios",
+    "review_date": "2025-02-05",
+    "app_version": "4.7.1",
+    "issues": [
+      {
+        "category": "price",
+        "severity": 2,
+        "quote": "Хороший баланс цены и качества: обслуживание карты бесплатно, кэшбэк 1% на всё"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "svetlana_nn",
+    "rating": 1,
+    "platform": "rustore",
+    "review_date": "2025-05-18",
+    "app_version": "5.0.1",
+    "issues": [
+      {
+        "category": "reliability",
+        "severity": 5,
+        "quote": "Приложение крашится при попытке открыть выписку за год"
+      },
+      {
+        "category": "support",
+        "severity": 4,
+        "quote": "Логи отправила в поддержку — ответ «переустановите». Уже переустановила 4 раза"
+      }
+    ],
+    "competitor_mentions": [
+      "Альфа-Банк"
+    ]
+  },
+  {
+    "author": "roman_ekb",
+    "rating": 5,
+    "platform": "android",
+    "review_date": "2025-04-30",
+    "app_version": "4.9.3",
+    "issues": [
+      {
+        "category": "performance",
+        "severity": 1,
+        "quote": "Скорость отличная даже при слабом интернете"
+      },
+      {
+        "category": "design",
+        "severity": 1,
+        "quote": "Дизайн современный"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "yulia_rostov",
+    "rating": 3,
+    "platform": "ios",
+    "review_date": "2025-03-18",
+    "app_version": "4.8.0",
+    "issues": [
+      {
+        "category": "price",
+        "severity": 3,
+        "quote": "Подписка МойБанк Про за 149 руб — непонятно за что платишь, бонусы те же что бесплатно"
+      },
+      {
+        "category": "support",
+        "severity": 3,
+        "quote": "Поддержка объяснила только после эскалации"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "denis_vladivostok",
+    "rating": 2,
+    "platform": "android",
+    "review_date": "2025-01-30",
+    "app_version": "4.6.2",
+    "issues": [
+      {
+        "category": "reliability",
+        "severity": 4,
+        "quote": "Часовой пояс в истории операций сбивается — транзакции из Владивостока показываются как московские"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "alina_tver",
+    "rating": 4,
+    "platform": "android",
+    "review_date": "2025-05-10",
+    "app_version": "5.0.2",
+    "issues": [
+      {
+        "category": "ads",
+        "severity": 2,
+        "quote": "Реклама кредитов есть, но не так навязчиво как раньше"
+      },
+      {
+        "category": "design",
+        "severity": 2,
+        "quote": "Дизайн после редизайна стал воздушнее"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "pavel_chelyabinsk",
+    "rating": 3,
+    "platform": "rustore",
+    "review_date": "2025-02-20",
+    "app_version": "4.7.2",
+    "issues": [
+      {
+        "category": "reliability",
+        "severity": 4,
+        "quote": "RuStore-версия не поддерживает Google Pay — неудобно"
+      },
+      {
+        "category": "support",
+        "severity": 2,
+        "quote": "Поддержка отвечает по email за сутки"
+      },
+      {
+        "category": "price",
+        "severity": 2,
+        "quote": "Цены на услуги средние по рынку"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "oksana_barnaul",
+    "rating": 1,
+    "platform": "ios",
+    "review_date": "2025-04-05",
+    "app_version": "4.9.0",
+    "issues": [
+      {
+        "category": "reliability",
+        "severity": 5,
+        "quote": "Face ID перестал работать после iOS 18.2 — приходится вводить PIN каждый раз"
+      },
+      {
+        "category": "support",
+        "severity": 4,
+        "quote": "Баг известный, в App Store пишут «скоро исправим» уже месяц"
+      }
+    ],
+    "competitor_mentions": [
+      "ВТБ"
+    ]
+  },
+  {
+    "author": "artem_kaliningrad",
+    "rating": 5,
+    "platform": "android",
+    "review_date": "2025-03-30",
+    "app_version": "4.8.3",
+    "issues": [
+      {
+        "category": "design",
+        "severity": 1,
+        "quote": "понятный UX"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "galina_saratov",
+    "rating": 2,
+    "platform": "android",
+    "review_date": "2025-05-22",
+    "app_version": "5.0.3",
+    "issues": [
+      {
+        "category": "reliability",
+        "severity": 5,
+        "quote": "Уведомления о списаниях приходят с задержкой до 2 часов"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "nikita_irkutsk",
+    "rating": 3,
+    "platform": "ios",
+    "review_date": "2025-02-14",
+    "app_version": "4.7.0",
+    "issues": [
+      {
+        "category": "reliability",
+        "severity": 3,
+        "quote": "Сканер QR работает только при ярком свете, в помещении часто ошибка"
+      },
+      {
+        "category": "support",
+        "severity": 2,
+        "quote": "Поддержка предложила «попробовать ещё раз»"
+      },
+      {
+        "category": "price",
+        "severity": 3,
+        "quote": "Комиссии за снятие наличных высокие — 2%"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "vera_volgograd",
+    "rating": 4,
+    "platform": "android",
+    "review_date": "2025-04-15",
+    "app_version": "4.9.1",
+    "issues": [
+      {
+        "category": "ads",
+        "severity": 2,
+        "quote": "Хотелось бы меньше баннеров про вклады"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "igor_tyumen",
+    "rating": 2,
+    "platform": "rustore",
+    "review_date": "2025-01-08",
+    "app_version": "4.5.8",
+    "issues": [
+      {
+        "category": "ads",
+        "severity": 4,
+        "quote": "При входе показывают полноэкранную рекламу кредитной карты — закрыть можно только через 5 секунд"
+      },
+      {
+        "category": "performance",
+        "severity": 3,
+        "quote": "Производительность на среднем телефоне слабая"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "tatyana_kemerovo",
+    "rating": 5,
+    "platform": "android",
+    "review_date": "2025-05-05",
+    "app_version": "5.0.1",
+    "issues": [
+      {
+        "category": "performance",
+        "severity": 1,
+        "quote": "Всё летает на Pixel 8"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "konstantin_ryazan",
+    "rating": 3,
+    "platform": "ios",
+    "review_date": "2025-03-08",
+    "app_version": "4.8.0",
+    "issues": [
+      {
+        "category": "reliability",
+        "severity": 3,
+        "quote": "Синхронизация с Apple Watch работает через раз — баланс на часах не обновляется"
+      },
+      {
+        "category": "price",
+        "severity": 2,
+        "quote": "Тарифы на переводы за границу завышены по сравнению с Тинькофф"
+      }
+    ],
+    "competitor_mentions": [
+      "Тинькофф"
+    ]
+  },
+  {
+    "author": "lyudmila_astrakhan",
+    "rating": 1,
+    "platform": "android",
+    "review_date": "2025-04-20",
+    "app_version": "4.9.2",
+    "issues": [
+      {
+        "category": "reliability",
+        "severity": 5,
+        "quote": "Потеряла 15 000 при переводе — статус «в обработке» 48 часов, потом «отменено», деньги вернулись только через 5 дней"
+      },
+      {
+        "category": "support",
+        "severity": 5,
+        "quote": "Поддержка не могла объяснить причину"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "maxim_stavropol",
+    "rating": 4,
+    "platform": "android",
+    "review_date": "2025-02-25",
+    "app_version": "4.7.3",
+    "issues": [
+      {
+        "category": "design",
+        "severity": 2,
+        "quote": "Дизайн можно было бы сделать контрастнее — слабовидящим сложно"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "daria_murmansk",
+    "rating": 2,
+    "platform": "ios",
+    "review_date": "2025-05-12",
+    "app_version": "5.0.2",
+    "issues": [
+      {
+        "category": "reliability",
+        "severity": 4,
+        "quote": "После обновления пропали старые категории в аналитике расходов"
+      },
+      {
+        "category": "support",
+        "severity": 4,
+        "quote": "Поддержка сказала «это фича, не баг»"
+      },
+      {
+        "category": "ads",
+        "severity": 3,
+        "quote": "Реклама инвестиционных продуктов в push каждый день"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "boris_khabarovsk",
+    "rating": 3,
+    "platform": "rustore",
+    "review_date": "2025-03-15",
+    "app_version": "4.8.1",
+    "issues": [
+      {
+        "category": "design",
+        "severity": 3,
+        "quote": "скучный интерфейс — серые кнопки, нет анимаций"
+      },
+      {
+        "category": "price",
+        "severity": 4,
+        "quote": "Комиссия за международный перевод 3% — дорого"
+      }
+    ],
+    "competitor_mentions": [
+      "Райффайзен"
+    ]
+  },
+  {
+    "author": "evgeniya_tomsk",
+    "rating": 5,
+    "platform": "android",
+    "review_date": "2025-04-08",
+    "app_version": "4.9.0",
+    "issues": [
+      {
+        "category": "design",
+        "severity": 1,
+        "quote": "дизайн приятный"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "stanislav_orel",
+    "rating": 2,
+    "platform": "ios",
+    "review_date": "2025-01-25",
+    "app_version": "4.6.1",
+    "issues": [
+      {
+        "category": "performance",
+        "severity": 5,
+        "quote": "Приложение жрёт 400 МБ оперативки — телефон греется. Оптимизация никакая"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "valentina_kursk",
+    "rating": 4,
+    "platform": "android",
+    "review_date": "2025-05-08",
+    "app_version": "5.0.0",
+    "issues": [
+      {
+        "category": "performance",
+        "severity": 3,
+        "quote": "Иногда долго грузится карта на главном экране"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "gleb_penza",
+    "rating": 1,
+    "platform": "android",
+    "review_date": "2025-03-02",
+    "app_version": "4.8.0",
+    "issues": [
+      {
+        "category": "reliability",
+        "severity": 5,
+        "quote": "Двухфакторка через SMS не приходит 30 минут — заблокирован доступ к счёту"
+      },
+      {
+        "category": "support",
+        "severity": 5,
+        "quote": "Горячая линия: «ждите»"
+      }
+    ],
+    "competitor_mentions": [
+      "Газпромбанк"
+    ]
+  },
+  {
+    "author": "polina_smolensk",
+    "rating": 3,
+    "platform": "ios",
+    "review_date": "2025-04-22",
+    "app_version": "4.9.2",
+    "issues": [
+      {
+        "category": "design",
+        "severity": 3,
+        "quote": "логика навигации запутанная — три тапа до настроек карты"
+      },
+      {
+        "category": "price",
+        "severity": 3,
+        "quote": "Подписка 99 руб/мес за «приоритетную поддержку»"
+      },
+      {
+        "category": "support",
+        "severity": 3,
+        "quote": "поддержка всё равно отвечает долго"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "timur_yakutsk",
+    "rating": 4,
+    "platform": "rustore",
+    "review_date": "2025-02-18",
+    "app_version": "4.7.1",
+    "issues": [
+      {
+        "category": "reliability",
+        "severity": 2,
+        "quote": "На слабом интернете в Якутии приложение всё равно открывается — офлайн-режим с последним балансом"
+      },
+      {
+        "category": "design",
+        "severity": 2,
+        "quote": "Дизайн простой, но функциональный"
+      }
+    ],
+    "competitor_mentions": []
+  },
+  {
+    "author": "alla_bryansk",
+    "rating": 2,
+    "platform": "android",
+    "review_date": "2025-05-25",
+    "app_version": "5.0.3",
+    "issues": [
+      {
+        "category": "reliability",
+        "severity": 5,
+        "quote": "при оплате по QR показывает успех, а продавец говорит «не пришло»"
+      },
+      {
+        "category": "support",
+        "severity": 4,
+        "quote": "Поддержка компенсировала только один раз"
+      }
+    ],
+    "competitor_mentions": []
+  }
+]

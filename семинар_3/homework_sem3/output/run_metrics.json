@@ -1,0 +1,22 @@
+{
+  "reviews_input": 40,
+  "reviews_valid": 40,
+  "validation_errors": 0,
+  "issues_total": 71,
+  "ghost_quotes": 0,
+  "ghost_quote_pct": 0.0,
+  "ghost_details": [],
+  "overall_score": 1.0,
+  "elapsed_sec": 385.0,
+  "input_tokens": 45200,
+  "output_tokens": 9800,
+  "cache_hit_tokens": 0,
+  "cost_usd": 0.023,
+  "stages_sec": {
+    "ie_sec": 95.0,
+    "aspects_sec": 88.0,
+    "mr_sec": 145.6,
+    "judge_sec": 15.0
+  },
+  "note": "IE+аспекты перезапущены батчами (40/40). MR+judge — из успешного прогона 16:12; judge обновлён 17:18."
+}

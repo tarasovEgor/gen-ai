@@ -1,0 +1,790 @@
+[
+  {
+    "author": "anna_k_92",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "Приложение постоянно вылетает при переводе по СБП",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "support",
+        "sentiment": "negative",
+        "quote": "Поддержка отвечает шаблонами через 2 дня",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "subscriptions",
+        "sentiment": "negative",
+        "quote": "За подписку Плюс 199 руб/мес не вижу смысла",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "dmitry_moscow",
+    "aspects": [
+      {
+        "aspect": "design",
+        "sentiment": "positive",
+        "quote": "Обновили дизайн — стало намного приятнее, тёмная тема наконец нормальная",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "biometrics_auth",
+        "sentiment": "positive",
+        "quote": "Переводы моментальные, Face ID работает без сбоев",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "author": "olga_spb",
+    "aspects": [
+      {
+        "aspect": "design",
+        "sentiment": "negative",
+        "quote": "Интерфейс перегружен кнопками, новичку сложно найти историю операций",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "ads_promotions",
+        "sentiment": "negative",
+        "quote": "Реклама кредитов в ленте раздражает — каждый раз при входе баннер «Возьми 500 000»",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "author": "ivan_dev",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "После обновления 5.0.2 приложение не открывается на Xiaomi Redmi Note 11. Чёрный экран и вылет",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "support",
+        "sentiment": "negative",
+        "quote": "Написал в чат — жду ответа уже неделю",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "reliability_bugs",
+        "sentiment": "negative",
+        "quote": "Ненадёжный софт, перехожу на Сбер",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "marina_1988",
+    "aspects": [
+      {
+        "aspect": "support",
+        "sentiment": "positive",
+        "quote": "Поддержка в чате ответила за 15 минут, помогли разблокировать карту",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "price_fees",
+        "sentiment": "negative",
+        "quote": "Единственный минус — комиссия 1% за перевод на карту другого банка, дороговато",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "alex_nsk",
+    "aspects": [
+      {
+        "aspect": "notifications",
+        "sentiment": "negative",
+        "quote": "Реклама навязчивая: push-уведомления про кредиты 3-4 раза в день, даже если отключил в настройках",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "Скорость загрузки главного экрана 8-10 секунд на 4G — неприемлемо для банка 2025 года",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "author": "petr_kazan",
+    "aspects": [
+      {
+        "aspect": "reliability_bugs",
+        "sentiment": "positive",
+        "quote": "Стабильно работает уже полгода, ни одного сбоя",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "design",
+        "sentiment": "neutral",
+        "quote": "Дизайн скромный, но понятный",
+        "confidence": 0.85
+      },
+      {
+        "aspect": "ads_promotions",
+        "sentiment": "positive",
+        "quote": "Рекламы почти нет",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "elena_voronezh",
+    "aspects": [
+      {
+        "aspect": "biometrics_auth",
+        "sentiment": "negative",
+        "quote": "Биометрия то работает, то просит пароль заново после каждого обновления",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "support",
+        "sentiment": "negative",
+        "quote": "Поддержка по телефону — 40 минут ожидания",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "price_fees",
+        "sentiment": "positive",
+        "quote": "вклад под 18% открывается прямо в приложении, удобно",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "author": "sergey_tula",
+    "aspects": [
+      {
+        "aspect": "subscriptions",
+        "sentiment": "negative",
+        "quote": "Списали 299 рублей за подписку, которую я не оформлял",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "support",
+        "sentiment": "negative",
+        "quote": "Чат поддержки молчит третий день",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "natasha_ufa",
+    "aspects": [
+      {
+        "aspect": "design",
+        "sentiment": "positive",
+        "quote": "Нравится раздел «Аналитика расходов» — графики понятные, категории автоматические",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "performance",
+        "sentiment": "positive",
+        "quote": "Приложение шустрое на флагмане Samsung",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "andrey_samara",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "В RuStore версия отстаёт на 2 релиза от Google Play — фичи появляются с задержкой",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "design",
+        "sentiment": "negative",
+        "quote": "Дизайн устаревший, иконки мелкие",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "qr_payments",
+        "sentiment": "negative",
+        "quote": "QR-оплата часто не сканирует",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "kate_msk",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "positive",
+        "quote": "Обновление 5.0 — огонь!",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "design",
+        "sentiment": "positive",
+        "quote": "Новый виджет на главный экран iOS",
+        "confidence": 0.85
+      },
+      {
+        "aspect": "support",
+        "sentiment": "positive",
+        "quote": "Поддержка в Telegram-боте отвечает мгновенно",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "author": "viktor_omsk",
+    "aspects": [
+      {
+        "aspect": "qr_payments",
+        "sentiment": "negative",
+        "quote": "Платёж по QR завис на «обработке» 20 минут, деньги списались, магазин не получил",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "support",
+        "sentiment": "neutral",
+        "quote": "Пришлось звонить на горячую линию",
+        "confidence": 0.7
+      },
+      {
+        "aspect": "design",
+        "sentiment": "neutral",
+        "quote": "Дизайн терпимый",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "author": "irina_krasnodar",
+    "aspects": [
+      {
+        "aspect": "ads_promotions",
+        "sentiment": "negative",
+        "quote": "Слишком много рекламы страховок и инвестиций — целый экран при входе. Отключить нельзя",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "Производительность на старом телефоне Honor 9 — 15 секунд загрузка, потом лаги",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "author": "mikhail_perm",
+    "aspects": [
+      {
+        "aspect": "price_fees",
+        "sentiment": "positive",
+        "quote": "Хороший баланс цены и качества: обслуживание карты бесплатно, кэшбэк 1% на всё",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "design",
+        "sentiment": "positive",
+        "quote": "Интерфейс чистый, без лишнего",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "svetlana_nn",
+    "aspects": [
+      {
+        "aspect": "reliability_bugs",
+        "sentiment": "negative",
+        "quote": "Приложение крашится при попытке открыть выписку за год",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "support",
+        "sentiment": "negative",
+        "quote": "Логи отправила в поддержку — ответ «переустановите». Уже переустановила 4 раза",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "author": "roman_ekb",
+    "aspects": [
+      {
+        "aspect": "offline_mode",
+        "sentiment": "positive",
+        "quote": "Скорость отличная даже при слабом интернете",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "design",
+        "sentiment": "positive",
+        "quote": "Дизайн современный",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "yulia_rostov",
+    "aspects": [
+      {
+        "aspect": "subscriptions",
+        "sentiment": "negative",
+        "quote": "Подписка МойБанк Про за 149 руб — непонятно за что платишь, бонусы те же что бесплатно",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "support",
+        "sentiment": "negative",
+        "quote": "Поддержка объяснила только после эскалации",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "author": "denis_vladivostok",
+    "aspects": [
+      {
+        "aspect": "reliability_bugs",
+        "sentiment": "negative",
+        "quote": "Часовой пояс в истории операций сбивается — транзакции из Владивостока показываются как московские. Баг не исправляют 3 месяца",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "performance",
+        "sentiment": "neutral",
+        "quote": "Скорость СБП нормальная",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "author": "alina_tver",
+    "aspects": [
+      {
+        "aspect": "design",
+        "sentiment": "positive",
+        "quote": "Дизайн после редизайна стал воздушнее",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "ads_promotions",
+        "sentiment": "neutral",
+        "quote": "Реклама кредитов есть, но не так навязчиво как раньше",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "author": "pavel_chelyabinsk",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "positive",
+        "quote": "приложение лёгкое, 45 МБ",
+        "confidence": 0.8
+      },
+      {
+        "aspect": "support",
+        "sentiment": "neutral",
+        "quote": "Поддержка отвечает по email за сутки",
+        "confidence": 0.7
+      },
+      {
+        "aspect": "price_fees",
+        "sentiment": "neutral",
+        "quote": "Цены на услуги средние по рынку",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "author": "oksana_barnaul",
+    "aspects": [
+      {
+        "aspect": "biometrics_auth",
+        "sentiment": "negative",
+        "quote": "Face ID перестал работать после iOS 18.2 — приходится вводить PIN каждый раз",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "support",
+        "sentiment": "negative",
+        "quote": "Баг известный, в App Store пишут «скоро исправим» уже месяц",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "artem_kaliningrad",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "positive",
+        "quote": "Быстрые переводы",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "design",
+        "sentiment": "positive",
+        "quote": "понятный UX",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "ads_promotions",
+        "sentiment": "positive",
+        "quote": "нет рекламного мусора",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "galina_saratov",
+    "aspects": [
+      {
+        "aspect": "notifications",
+        "sentiment": "negative",
+        "quote": "Уведомления о списаниях приходят с задержкой до 2 часов — уже дважды не заметила мошенническое списание вовремя. Надёжность уведомлений нулевая",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "design",
+        "sentiment": "neutral",
+        "quote": "Дизайн норм",
+        "confidence": 0.7
+      }
+    ]
+  },
+  {
+    "author": "nikita_irkutsk",
+    "aspects": [
+      {
+        "aspect": "qr_payments",
+        "sentiment": "negative",
+        "quote": "Сканер QR работает только при ярком свете, в помещении часто ошибка",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "support",
+        "sentiment": "negative",
+        "quote": "Поддержка предложила «попробовать ещё раз»",
+        "confidence": 0.8
+      },
+      {
+        "aspect": "price_fees",
+        "sentiment": "negative",
+        "quote": "Комиссии за снятие наличных высокие — 2%",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "vera_volgograd",
+    "aspects": [
+      {
+        "aspect": "design",
+        "sentiment": "positive",
+        "quote": "Удобный раздел «Семейный доступ» — вижу расходы ребёнка",
+        "confidence": 0.85
+      },
+      {
+        "aspect": "reliability_bugs",
+        "sentiment": "positive",
+        "quote": "Приложение стабильное, обновления без поломок",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "ads_promotions",
+        "sentiment": "negative",
+        "quote": "Хотелось бы меньше баннеров про вклады",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "author": "igor_tyumen",
+    "aspects": [
+      {
+        "aspect": "ads_promotions",
+        "sentiment": "negative",
+        "quote": "При входе показывают полноэкранную рекламу кредитной карты — закрыть можно только через 5 секунд",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "Производительность на среднем телефоне слабая",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "tatyana_kemerovo",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "positive",
+        "quote": "Всё летает на Pixel 8",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "design",
+        "sentiment": "positive",
+        "quote": "Дизайн минималистичный, глаз радуется",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "konstantin_ryazan",
+    "aspects": [
+      {
+        "aspect": "reliability_bugs",
+        "sentiment": "negative",
+        "quote": "Синхронизация с Apple Watch работает через раз — баланс на часах не обновляется",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "price_fees",
+        "sentiment": "negative",
+        "quote": "Тарифы на переводы за границу завышены по сравнению с Тинькофф",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "author": "lyudmila_astrakhan",
+    "aspects": [
+      {
+        "aspect": "reliability_bugs",
+        "sentiment": "negative",
+        "quote": "Потеряла 15 000 при переводе — статус «в обработке» 48 часов, потом «отменено», деньги вернулись только через 5 дней. Ненадёжно!",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "support",
+        "sentiment": "negative",
+        "quote": "Поддержка не могла объяснить причину",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "maxim_stavropol",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "positive",
+        "quote": "Скорость оплаты по NFC отличная",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "design",
+        "sentiment": "negative",
+        "quote": "Дизайн можно было бы сделать контрастнее — слабовидящим сложно",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "author": "daria_murmansk",
+    "aspects": [
+      {
+        "aspect": "support",
+        "sentiment": "negative",
+        "quote": "Поддержка сказала «это фича, не баг»",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "notifications",
+        "sentiment": "negative",
+        "quote": "Реклама инвестиционных продуктов в push каждый день",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "author": "boris_khabarovsk",
+    "aspects": [
+      {
+        "aspect": "design",
+        "sentiment": "negative",
+        "quote": "скучный интерфейс — серые кнопки, нет анимаций",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "reliability_bugs",
+        "sentiment": "positive",
+        "quote": "Зато не вылетает",
+        "confidence": 0.85
+      },
+      {
+        "aspect": "price_fees",
+        "sentiment": "negative",
+        "quote": "Комиссия за международный перевод 3% — дорого",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "author": "evgeniya_tomsk",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "positive",
+        "quote": "Никаких лагов",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "design",
+        "sentiment": "positive",
+        "quote": "дизайн приятный",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "support",
+        "sentiment": "positive",
+        "quote": "Чат с менеджером встроен",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "stanislav_orel",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "Приложение жрёт 400 МБ оперативки — телефон греется. Оптимизация никакая",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "support",
+        "sentiment": "positive",
+        "quote": "Поддержка по видеозвонку — редкая фича, понравилось",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "valentina_kursk",
+    "aspects": [
+      {
+        "aspect": "notifications",
+        "sentiment": "positive",
+        "quote": "Пенсию приходит вовремя, уведомление за 5 минут до зачисления",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "design",
+        "sentiment": "positive",
+        "quote": "Крупные кнопки — удобно пожилым",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "ads_promotions",
+        "sentiment": "positive",
+        "quote": "Рекламы мало",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "Иногда долго грузится карта на главном экране",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "author": "gleb_penza",
+    "aspects": [
+      {
+        "aspect": "reliability_bugs",
+        "sentiment": "negative",
+        "quote": "Двухфакторка через SMS не приходит 30 минут — заблокирован доступ к счёту",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "support",
+        "sentiment": "negative",
+        "quote": "Горячая линия: «ждите»",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "polina_smolensk",
+    "aspects": [
+      {
+        "aspect": "design",
+        "sentiment": "neutral",
+        "quote": "дизайн красивый, но логика навигации запутанная — три тапа до настроек карты",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "performance",
+        "sentiment": "neutral",
+        "quote": "Скорость приемлемая",
+        "confidence": 0.85
+      },
+      {
+        "aspect": "subscriptions",
+        "sentiment": "negative",
+        "quote": "Подписка 99 руб/мес за «приоритетную поддержку» — поддержка всё равно отвечает долго",
+        "confidence": 0.9
+      },
+      {
+        "aspect": "support",
+        "sentiment": "negative",
+        "quote": "поддержка всё равно отвечает долго",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "author": "timur_yakutsk",
+    "aspects": [
+      {
+        "aspect": "offline_mode",
+        "sentiment": "positive",
+        "quote": "На слабом интернете в Якутии приложение всё равно открывается — офлайн-режим с последним балансом",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "design",
+        "sentiment": "neutral",
+        "quote": "Дизайн простой, но функциональный",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "author": "alla_bryansk",
+    "aspects": [
+      {
+        "aspect": "qr_payments",
+        "sentiment": "negative",
+        "quote": "Баг: при оплате по QR показывает успех, а продавец говорит «не пришло». Уже 3 случая за месяц",
+        "confidence": 0.95
+      },
+      {
+        "aspect": "support",
+        "sentiment": "neutral",
+        "quote": "Поддержка компенсировала только один раз",
+        "confidence": 0.8
+      },
+      {
+        "aspect": "design",
+        "sentiment": "neutral",
+        "quote": "Производительность и дизайн — норм",
+        "confidence": 0.85
+      }
+    ]
+  }
+]
