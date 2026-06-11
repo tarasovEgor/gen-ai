@@ -1,0 +1,46 @@
+# Иван · backend-разработчик, маркетплейс · интервью об API CloudPay
+
+— Меня зовут Иван, 29 лет, backend в маркетплейсе электроники. Мы принимаем оплату через CloudPay с прошлого года. Стек — Python, Django, Celery.
+
+— Главная боль — задержка webhook. Клиент оплачивает заказ, сервер ждёт callback, чтобы пометить заказ «оплачен». В доке «до 3 секунд», на практике 40-90 секунд. Black Friday — webhook через две минуты.
+
+— Тариф Developer Pro — 4900 руб/мес, 100 000 транзакций. Stripe webhook быстрее, но дороже для нашего объёма.
+
+— Sandbox: webhook мгновенный. Прод — другая картина. В Slack CloudPay-RU все жалуются на задержки webhook.
+
+— API create_payment — 200-300 мс. СБП через CloudPay работает, webhook для СБП до трёх минут в выходные.
+
+— Интервьюер: Как вы мониторите webhook сейчас?
+— Подняли Prometheus + алерт на lag > 60 сек. Логируем event_id, payment_id, received_at. Раз в неделю смотрим p95 — сейчас 47 секунд в среднем за месяц.
+
+— Интервьюер: Были ли инциденты с потерянными webhook?
+— Два раза за квартал webhook не пришёл вообще. Пришлось делать polling payments API каждые 30 секунд — нагрузка выросла. CloudPay вернул событие при ручном replay из кабинета.
+
+— Интервьюер: Пробовали другие тарифы?
+— Developer Pro оптимален. Enterprise — 19 900, не окупается. Startup — лимит 10к транзакций, мы перерастаем за неделю.
+
+— Интервьюер: Что в документации не хватает?
+— Раздел «troubleshooting webhook delays» — пустой. Нужны best practices: idempotency, exponential backoff, dead letter queue.
+
+— Интервьюер: Рекомендуете CloudPay коллегам?
+— Да, если webhook не критичен по SLA. Для нас критичен — ждём фикса. Иначе миграция на ЮKassa.
+
+— Мы интегрировали CloudPay за три спринта. Первый — sandbox и unit-тесты. Второй — прод и webhook endpoint с HMAC-проверкой. Третий — мониторинг и алерты. Команда 4 человека.
+
+— Архитектура: nginx → gunicorn → Django view /api/cloudpay/webhook/. Celery task process_payment_event. Redis как брокер. PostgreSQL — orders, payments.
+
+— Нагрузка: 800-1200 платежей в день, пик 3500 в распродажи. Webhook endpoint выдерживает, узкое место — ожидание события.
+
+— Безопасность: whitelist IP CloudPay, проверка подписи sha512, rate limit на endpoint. Пентест в марте — замечаний нет.
+
+— Планы: если к сентябрю webhook p95 > 30 сек — RFP на альтернативы. ЮKassa и Robokassa в shortlist.
+
+— Дополнительно: мы ведём runbook интеграции CloudPay в Confluence — 25 страниц. Каждый релиз API проверяем на staging за две недели до продакшена. Логи webhook храним 90 дней в S3. Ошибки SDK ловим через Sentry с тегом payment_provider=cloudpay. Перед распродажами — нагрузочный тест checkout на k6, 500 RPS.
+
+— Интервьюер: Как взаимодействуете с поддержкой CloudPay? — Тикеты через портал, для Enterprise — Telegram-чат с менеджером. Среднее время первого ответа 4 часа. Эскалация на L2 — сутки. Раз в квартал созвон с аккаунт-менеджером, обсуждаем roadmap и наши pain points.
+
+— Метрики, которые смотрим еженедельно: conversion checkout, decline rate, webhook lag p95, API latency p99, chargeback rate, refund volume. Дашборд в Metabase, алерты в Slack #payments. При аномалии — war room, статус клиентам в status page магазина.
+
+— Обучение команды: онбординг нового разработчика — 3 дня чтения docs CloudPay, 2 дня sandbox, 1 день shadowing on-call. Сертификация внутренняя — тест 30 вопросов по API. Без сертификата — нет доступа к prod keys.
+
+— История интеграции началась с пилота на 5% трафика. Месяц A/B — CloudPay показал +3% конверсии vs старый эквайринг. Постепенно раскатили на 100%. Rollback plan — переключение DNS checkout на legacy за 15 минут, тестируем раз в квартал.

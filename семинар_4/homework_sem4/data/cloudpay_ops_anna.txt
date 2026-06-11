@@ -1,0 +1,50 @@
+# Анна · SRE, финтех · интервью CloudPay
+
+— Анна, 35 лет, SRE. White-label CloudPay для банковского приложения. PCI DSS и СБП — моя зона.
+
+— PCI DSS Level 1 — CloudPay сертифицирован, аудит февраль. Главная причина выбора.
+
+— СБП: QR, C2B через единый API с октября. Webhook дублируется — два payment.succeeded на один платёж.
+
+— Инцидент 15 апреля: API 40 мин деградация. Postmortem — Redis cluster.
+
+— ФЗ-152: tokenization CloudPay, DPA проверен юристами.
+
+— Интервьюер: PCI DSS детали?
+— AOC на сайте, ежегодный аудит QSA. Мы не храним PAN — только tokens. SAQ A заполняем за день.
+
+— Интервьюер: СБП проблемы?
+— Дубли webhook — 0.3% платежей. Idempotency по payment_id. Просим dedup на стороне CloudPay.
+
+— Интервьюер: Мониторинг?
+— Prometheus exporter, Grafana dashboard. Алерт p95 webhook > 30 сек. PagerDuty интеграция.
+
+— Интервьюер: Status page?
+— Обновляют с задержкой. Хотим webhook на инциденты в наш Slack.
+
+— Интервьюер: mTLS?
+— Enterprise feature, включили за неделю. Сертификаты ротируем раз в год.
+
+— Инфраструктура: Kubernetes, 12 pods payment-gateway, HPA по CPU. CloudPay — external dependency, circuit breaker на 5xx.
+
+— 2 млн транзакций в месяц через CloudPay. СБП — 35% объёма, растёт.
+
+— Compliance checklist: PCI ✓, ФЗ-152 ✓, 115-ФЗ процедуры ✓, GDPR не применим.
+
+— Рекомендация: webhook dedup и быстрый status page.
+
+— Дополнительно: мы ведём runbook интеграции CloudPay в Confluence — 25 страниц. Каждый релиз API проверяем на staging за две недели до продакшена. Логи webhook храним 90 дней в S3. Ошибки SDK ловим через Sentry с тегом payment_provider=cloudpay. Перед распродажами — нагрузочный тест checkout на k6, 500 RPS.
+
+— Интервьюер: Как взаимодействуете с поддержкой CloudPay? — Тикеты через портал, для Enterprise — Telegram-чат с менеджером. Среднее время первого ответа 4 часа. Эскалация на L2 — сутки. Раз в квартал созвон с аккаунт-менеджером, обсуждаем roadmap и наши pain points.
+
+— Метрики, которые смотрим еженедельно: conversion checkout, decline rate, webhook lag p95, API latency p99, chargeback rate, refund volume. Дашборд в Metabase, алерты в Slack #payments. При аномалии — war room, статус клиентам в status page магазина.
+
+— Обучение команды: онбординг нового разработчика — 3 дня чтения docs CloudPay, 2 дня sandbox, 1 день shadowing on-call. Сертификация внутренняя — тест 30 вопросов по API. Без сертификата — нет доступа к prod keys.
+
+— История интеграции началась с пилота на 5% трафика. Месяц A/B — CloudPay показал +3% конверсии vs старый эквайринг. Постепенно раскатили на 100%. Rollback plan — переключение DNS checkout на legacy за 15 минут, тестируем раз в квартал.
+
+— Дополнительно: мы ведём runbook интеграции CloudPay в Confluence — 25 страниц. Каждый релиз API проверяем на staging за две недели до продакшена. Логи webhook храним 90 дней в S3. Ошибки SDK ловим через Sentry с тегом payment_provider=cloudpay. Перед распродажами — нагрузочный тест checkout на k6, 500 RPS.
+
+— Интервьюер: Как взаимодействуете с поддержкой CloudPay? — Тикеты через портал, для Enterprise — Telegram-чат с менеджером. Среднее время первого ответа 4 часа. Эскалация на L2 — сутки. Раз в квартал созвон с аккаунт-менеджером, обсуждаем roadmap и наши pain points.
+
+— Метрики, которые смотрим еженедельно: conversion checkout, decline rate, webhook lag p95, API latency p99, chargeback rate, refund volume. Дашборд в Metabase, алерты в Slack #payments. При аномалии — war room, статус клиентам в status page магазина.

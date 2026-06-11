@@ -1,0 +1,50 @@
+# Катя · PM CloudPay · внутреннее интервью
+
+— Катя, 30 лет, PM CloudPay. Боли 200 мерчантов: webhook, latency пик, устаревшая дока.
+
+— Новый dashboard в апреле — early adopters хвалят. Старый UI «как из 2015» — NPS.
+
+— Старый UI: «не найти webhook», «кнопки спрятаны». Dashboard чинит.
+
+— Roadmap Q3: webhook v2 < 5 сек, docs refresh, proration Billing.
+
+— Интервьюер: Метрики dashboard?
+— Adoption 34% за месяц. CSAT 4.2/5. Жалобы на навигацию -60%.
+
+— Интервьюер: Конкуренты?
+— Stripe эталон DX. ЮKassa дешевле. Robokassa legacy.
+
+— Интервьюер: Приоритизация?
+— RICE scoring. Webhook v2 score 89, docs 76, proration 71.
+
+— Интервьюер: Фокус-группы?
+— Раз в квартал. Последняя — 12 мерчантов, 3 часа. Запись транскрибируем.
+
+— Интервьюер: Churn?
+— 4% annual. Top reason — webhook reliability. Second — pricing.
+
+— Команда: 3 PM, 12 engineers payments, 4 docs writers (2 вакансии).
+
+— OKR Q2: webhook p95 < 10 sec, NPS +5, docs freshness score 90%.
+
+— Внутренний дашборд: 1800 активных мерчантов, 45M транзакций/мес.
+
+— Честно: знаем проблемы, чиним. Webhook — P0.
+
+— Дополнительно: мы ведём runbook интеграции CloudPay в Confluence — 25 страниц. Каждый релиз API проверяем на staging за две недели до продакшена. Логи webhook храним 90 дней в S3. Ошибки SDK ловим через Sentry с тегом payment_provider=cloudpay. Перед распродажами — нагрузочный тест checkout на k6, 500 RPS.
+
+— Интервьюер: Как взаимодействуете с поддержкой CloudPay? — Тикеты через портал, для Enterprise — Telegram-чат с менеджером. Среднее время первого ответа 4 часа. Эскалация на L2 — сутки. Раз в квартал созвон с аккаунт-менеджером, обсуждаем roadmap и наши pain points.
+
+— Метрики, которые смотрим еженедельно: conversion checkout, decline rate, webhook lag p95, API latency p99, chargeback rate, refund volume. Дашборд в Metabase, алерты в Slack #payments. При аномалии — war room, статус клиентам в status page магазина.
+
+— Обучение команды: онбординг нового разработчика — 3 дня чтения docs CloudPay, 2 дня sandbox, 1 день shadowing on-call. Сертификация внутренняя — тест 30 вопросов по API. Без сертификата — нет доступа к prod keys.
+
+— История интеграции началась с пилота на 5% трафика. Месяц A/B — CloudPay показал +3% конверсии vs старый эквайринг. Постепенно раскатили на 100%. Rollback plan — переключение DNS checkout на legacy за 15 минут, тестируем раз в квартал.
+
+— Дополнительно: мы ведём runbook интеграции CloudPay в Confluence — 25 страниц. Каждый релиз API проверяем на staging за две недели до продакшена. Логи webhook храним 90 дней в S3. Ошибки SDK ловим через Sentry с тегом payment_provider=cloudpay. Перед распродажами — нагрузочный тест checkout на k6, 500 RPS.
+
+— Интервьюер: Как взаимодействуете с поддержкой CloudPay? — Тикеты через портал, для Enterprise — Telegram-чат с менеджером. Среднее время первого ответа 4 часа. Эскалация на L2 — сутки. Раз в квартал созвон с аккаунт-менеджером, обсуждаем roadmap и наши pain points.
+
+— Метрики, которые смотрим еженедельно: conversion checkout, decline rate, webhook lag p95, API latency p99, chargeback rate, refund volume. Дашборд в Metabase, алерты в Slack #payments. При аномалии — war room, статус клиентам в status page магазина.
+
+— Обучение команды: онбординг нового разработчика — 3 дня чтения docs CloudPay, 2 дня sandbox, 1 день shadowing on-call. Сертификация внутренняя — тест 30 вопросов по API. Без сертификата — нет доступа к prod keys.

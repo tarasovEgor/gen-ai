@@ -1,0 +1,578 @@
+{
+  "fixed": {
+    "strategy": "fixed",
+    "k": 5,
+    "mean": 0.8888888888888888,
+    "results": [
+      {
+        "id": 1,
+        "type": "прямой",
+        "question": "Кто жаловался на задержку webhook?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_dev_ivan",
+          "cloudpay_pm_kate"
+        ],
+        "retrieved_sources": [
+          "cloudpay_dev_ivan",
+          "cloudpay_pm_kate",
+          "cloudpay_dev_ivan",
+          "cloudpay_sec_nikita",
+          "cloudpay_dev_maria"
+        ],
+        "retrieved_ids": [
+          "cloudpay_dev_ivan__1",
+          "cloudpay_pm_kate__0",
+          "cloudpay_dev_ivan__0",
+          "cloudpay_sec_nikita__1",
+          "cloudpay_dev_maria__1"
+        ]
+      },
+      {
+        "id": 2,
+        "type": "синоним",
+        "question": "Кто ругался на скорость API в часы пик?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_ops_denis"
+        ],
+        "retrieved_sources": [
+          "cloudpay_ops_denis",
+          "cloudpay_sec_svetlana",
+          "cloudpay_sec_nikita",
+          "cloudpay_support_oleg",
+          "cloudpay_pm_kate"
+        ],
+        "retrieved_ids": [
+          "cloudpay_ops_denis__0",
+          "cloudpay_sec_svetlana__1",
+          "cloudpay_sec_nikita__1",
+          "cloudpay_support_oleg__1",
+          "cloudpay_pm_kate__1"
+        ]
+      },
+      {
+        "id": 3,
+        "type": "точный артикул",
+        "question": "Кто упомянул OAuth 2.1?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_dev_maria"
+        ],
+        "retrieved_sources": [
+          "cloudpay_ops_anna",
+          "cloudpay_dev_maria",
+          "cloudpay_sec_svetlana",
+          "cloudpay_sec_nikita",
+          "cloudpay_ops_anna"
+        ],
+        "retrieved_ids": [
+          "cloudpay_ops_anna__0",
+          "cloudpay_dev_maria__0",
+          "cloudpay_sec_svetlana__0",
+          "cloudpay_sec_nikita__1",
+          "cloudpay_ops_anna__1"
+        ]
+      },
+      {
+        "id": 4,
+        "type": "multi-hop",
+        "question": "Кто жаловался одновременно на цену тарифа Enterprise и на качество документации?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_dev_petr"
+        ],
+        "retrieved_sources": [
+          "cloudpay_dev_petr",
+          "cloudpay_dev_petr",
+          "cloudpay_support_elena",
+          "cloudpay_dev_maria",
+          "cloudpay_sec_nikita"
+        ],
+        "retrieved_ids": [
+          "cloudpay_dev_petr__0",
+          "cloudpay_dev_petr__1",
+          "cloudpay_support_elena__0",
+          "cloudpay_dev_maria__1",
+          "cloudpay_sec_nikita__1"
+        ]
+      },
+      {
+        "id": 5,
+        "type": "позитив",
+        "question": "Кто хвалил sandbox CloudPay?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_dev_maria",
+          "cloudpay_dev_ivan"
+        ],
+        "retrieved_sources": [
+          "cloudpay_dev_maria",
+          "cloudpay_sec_svetlana",
+          "cloudpay_dev_ivan",
+          "cloudpay_sec_nikita",
+          "cloudpay_ops_anna"
+        ],
+        "retrieved_ids": [
+          "cloudpay_dev_maria__0",
+          "cloudpay_sec_svetlana__0",
+          "cloudpay_dev_ivan__0",
+          "cloudpay_sec_nikita__1",
+          "cloudpay_ops_anna__0"
+        ]
+      },
+      {
+        "id": 6,
+        "type": "перефраз",
+        "question": "У кого были проблемы с подключением к API из-за ключей или токенов?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_support_oleg"
+        ],
+        "retrieved_sources": [
+          "cloudpay_support_oleg",
+          "cloudpay_support_oleg",
+          "cloudpay_sec_svetlana",
+          "cloudpay_pm_kate",
+          "cloudpay_support_elena"
+        ],
+        "retrieved_ids": [
+          "cloudpay_support_oleg__1",
+          "cloudpay_support_oleg__0",
+          "cloudpay_sec_svetlana__1",
+          "cloudpay_pm_kate__1",
+          "cloudpay_support_elena__1"
+        ]
+      },
+      {
+        "id": 7,
+        "type": "multi-hop",
+        "question": "Кто одновременно использует CloudPay и Stripe?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_sec_svetlana"
+        ],
+        "retrieved_sources": [
+          "cloudpay_sec_svetlana",
+          "cloudpay_pm_kate",
+          "cloudpay_sec_nikita",
+          "cloudpay_ops_anna",
+          "cloudpay_dev_maria"
+        ],
+        "retrieved_ids": [
+          "cloudpay_sec_svetlana__0",
+          "cloudpay_pm_kate__1",
+          "cloudpay_sec_nikita__1",
+          "cloudpay_ops_anna__0",
+          "cloudpay_dev_maria__0"
+        ]
+      },
+      {
+        "id": 8,
+        "type": "синоним",
+        "question": "Кто был недоволен старым интерфейсом личного кабинета?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_pm_kate"
+        ],
+        "retrieved_sources": [
+          "cloudpay_pm_kate",
+          "cloudpay_support_oleg",
+          "cloudpay_ops_denis",
+          "cloudpay_sec_svetlana",
+          "cloudpay_support_oleg"
+        ],
+        "retrieved_ids": [
+          "cloudpay_pm_kate__0",
+          "cloudpay_support_oleg__1",
+          "cloudpay_ops_denis__1",
+          "cloudpay_sec_svetlana__1",
+          "cloudpay_support_oleg__0"
+        ]
+      },
+      {
+        "id": 9,
+        "type": "точный артикул",
+        "question": "Кто упомянул PCI DSS Level 1?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_ops_anna",
+          "cloudpay_sec_nikita"
+        ],
+        "retrieved_sources": [
+          "cloudpay_ops_anna",
+          "cloudpay_sec_nikita",
+          "cloudpay_sec_svetlana",
+          "cloudpay_support_oleg",
+          "cloudpay_pm_kate"
+        ],
+        "retrieved_ids": [
+          "cloudpay_ops_anna__0",
+          "cloudpay_sec_nikita__0",
+          "cloudpay_sec_svetlana__1",
+          "cloudpay_support_oleg__1",
+          "cloudpay_pm_kate__1"
+        ]
+      },
+      {
+        "id": 10,
+        "type": "multi-hop",
+        "question": "Кто описывал проблемы с платежами через СБП?",
+        "score": 0.6666666666666666,
+        "gold": [
+          "cloudpay_dev_ivan",
+          "cloudpay_ops_anna",
+          "cloudpay_support_elena"
+        ],
+        "retrieved_sources": [
+          "cloudpay_dev_petr",
+          "cloudpay_ops_anna",
+          "cloudpay_support_elena",
+          "cloudpay_dev_petr",
+          "cloudpay_sec_nikita"
+        ],
+        "retrieved_ids": [
+          "cloudpay_dev_petr__1",
+          "cloudpay_ops_anna__0",
+          "cloudpay_support_elena__0",
+          "cloudpay_dev_petr__0",
+          "cloudpay_sec_nikita__0"
+        ]
+      },
+      {
+        "id": 11,
+        "type": "точный артикул",
+        "question": "Кто упомянул тариф Enterprise Plus?",
+        "score": 0.0,
+        "gold": [
+          "cloudpay_ops_denis"
+        ],
+        "retrieved_sources": [
+          "cloudpay_dev_petr",
+          "cloudpay_support_elena",
+          "cloudpay_ops_anna",
+          "cloudpay_sec_svetlana",
+          "cloudpay_sec_nikita"
+        ],
+        "retrieved_ids": [
+          "cloudpay_dev_petr__0",
+          "cloudpay_support_elena__0",
+          "cloudpay_ops_anna__0",
+          "cloudpay_sec_svetlana__0",
+          "cloudpay_sec_nikita__1"
+        ]
+      },
+      {
+        "id": 12,
+        "type": "перефраз",
+        "question": "У кого клиенты сталкивались с повторным списанием денег?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_support_elena"
+        ],
+        "retrieved_sources": [
+          "cloudpay_support_elena",
+          "cloudpay_dev_petr",
+          "cloudpay_dev_petr",
+          "cloudpay_support_oleg",
+          "cloudpay_dev_ivan"
+        ],
+        "retrieved_ids": [
+          "cloudpay_support_elena__0",
+          "cloudpay_dev_petr__1",
+          "cloudpay_dev_petr__0",
+          "cloudpay_support_oleg__0",
+          "cloudpay_dev_ivan__0"
+        ]
+      }
+    ]
+  },
+  "recursive": {
+    "strategy": "recursive",
+    "k": 5,
+    "mean": 0.7777777777777778,
+    "results": [
+      {
+        "id": 1,
+        "type": "прямой",
+        "question": "Кто жаловался на задержку webhook?",
+        "score": 0.5,
+        "gold": [
+          "cloudpay_dev_ivan",
+          "cloudpay_pm_kate"
+        ],
+        "retrieved_sources": [
+          "cloudpay_dev_ivan",
+          "cloudpay_dev_ivan",
+          "cloudpay_dev_ivan",
+          "cloudpay_dev_ivan",
+          "cloudpay_dev_ivan"
+        ],
+        "retrieved_ids": [
+          "cloudpay_dev_ivan__4",
+          "cloudpay_dev_ivan__1",
+          "cloudpay_dev_ivan__5",
+          "cloudpay_dev_ivan__2",
+          "cloudpay_dev_ivan__3"
+        ]
+      },
+      {
+        "id": 2,
+        "type": "синоним",
+        "question": "Кто ругался на скорость API в часы пик?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_ops_denis"
+        ],
+        "retrieved_sources": [
+          "cloudpay_ops_denis",
+          "cloudpay_ops_denis",
+          "cloudpay_ops_denis",
+          "cloudpay_ops_denis",
+          "cloudpay_dev_ivan"
+        ],
+        "retrieved_ids": [
+          "cloudpay_ops_denis__2",
+          "cloudpay_ops_denis__3",
+          "cloudpay_ops_denis__0",
+          "cloudpay_ops_denis__4",
+          "cloudpay_dev_ivan__3"
+        ]
+      },
+      {
+        "id": 3,
+        "type": "точный артикул",
+        "question": "Кто упомянул OAuth 2.1?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_dev_maria"
+        ],
+        "retrieved_sources": [
+          "cloudpay_dev_maria",
+          "cloudpay_dev_maria",
+          "cloudpay_ops_anna",
+          "cloudpay_dev_petr",
+          "cloudpay_dev_ivan"
+        ],
+        "retrieved_ids": [
+          "cloudpay_dev_maria__1",
+          "cloudpay_dev_maria__3",
+          "cloudpay_ops_anna__0",
+          "cloudpay_dev_petr__4",
+          "cloudpay_dev_ivan__6"
+        ]
+      },
+      {
+        "id": 4,
+        "type": "multi-hop",
+        "question": "Кто жаловался одновременно на цену тарифа Enterprise и на качество документации?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_dev_petr"
+        ],
+        "retrieved_sources": [
+          "cloudpay_dev_petr",
+          "cloudpay_pm_kate",
+          "cloudpay_pm_kate",
+          "cloudpay_dev_petr",
+          "cloudpay_dev_petr"
+        ],
+        "retrieved_ids": [
+          "cloudpay_dev_petr__2",
+          "cloudpay_pm_kate__3",
+          "cloudpay_pm_kate__2",
+          "cloudpay_dev_petr__3",
+          "cloudpay_dev_petr__0"
+        ]
+      },
+      {
+        "id": 5,
+        "type": "позитив",
+        "question": "Кто хвалил sandbox CloudPay?",
+        "score": 0.5,
+        "gold": [
+          "cloudpay_dev_maria",
+          "cloudpay_dev_ivan"
+        ],
+        "retrieved_sources": [
+          "cloudpay_dev_maria",
+          "cloudpay_dev_maria",
+          "cloudpay_sec_nikita",
+          "cloudpay_dev_maria",
+          "cloudpay_sec_svetlana"
+        ],
+        "retrieved_ids": [
+          "cloudpay_dev_maria__0",
+          "cloudpay_dev_maria__6",
+          "cloudpay_sec_nikita__3",
+          "cloudpay_dev_maria__5",
+          "cloudpay_sec_svetlana__0"
+        ]
+      },
+      {
+        "id": 6,
+        "type": "перефраз",
+        "question": "У кого были проблемы с подключением к API из-за ключей или токенов?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_support_oleg"
+        ],
+        "retrieved_sources": [
+          "cloudpay_support_oleg",
+          "cloudpay_dev_maria",
+          "cloudpay_ops_anna",
+          "cloudpay_sec_nikita",
+          "cloudpay_sec_svetlana"
+        ],
+        "retrieved_ids": [
+          "cloudpay_support_oleg__0",
+          "cloudpay_dev_maria__3",
+          "cloudpay_ops_anna__7",
+          "cloudpay_sec_nikita__6",
+          "cloudpay_sec_svetlana__6"
+        ]
+      },
+      {
+        "id": 7,
+        "type": "multi-hop",
+        "question": "Кто одновременно использует CloudPay и Stripe?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_sec_svetlana"
+        ],
+        "retrieved_sources": [
+          "cloudpay_sec_svetlana",
+          "cloudpay_dev_ivan",
+          "cloudpay_ops_anna",
+          "cloudpay_ops_denis",
+          "cloudpay_sec_svetlana"
+        ],
+        "retrieved_ids": [
+          "cloudpay_sec_svetlana__0",
+          "cloudpay_dev_ivan__6",
+          "cloudpay_ops_anna__3",
+          "cloudpay_ops_denis__8",
+          "cloudpay_sec_svetlana__7"
+        ]
+      },
+      {
+        "id": 8,
+        "type": "синоним",
+        "question": "Кто был недоволен старым интерфейсом личного кабинета?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_pm_kate"
+        ],
+        "retrieved_sources": [
+          "cloudpay_pm_kate",
+          "cloudpay_dev_maria",
+          "cloudpay_support_elena",
+          "cloudpay_dev_petr",
+          "cloudpay_pm_kate"
+        ],
+        "retrieved_ids": [
+          "cloudpay_pm_kate__0",
+          "cloudpay_dev_maria__3",
+          "cloudpay_support_elena__1",
+          "cloudpay_dev_petr__1",
+          "cloudpay_pm_kate__2"
+        ]
+      },
+      {
+        "id": 9,
+        "type": "точный артикул",
+        "question": "Кто упомянул PCI DSS Level 1?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_ops_anna",
+          "cloudpay_sec_nikita"
+        ],
+        "retrieved_sources": [
+          "cloudpay_ops_anna",
+          "cloudpay_sec_nikita",
+          "cloudpay_ops_anna",
+          "cloudpay_ops_anna",
+          "cloudpay_sec_nikita"
+        ],
+        "retrieved_ids": [
+          "cloudpay_ops_anna__0",
+          "cloudpay_sec_nikita__1",
+          "cloudpay_ops_anna__3",
+          "cloudpay_ops_anna__1",
+          "cloudpay_sec_nikita__0"
+        ]
+      },
+      {
+        "id": 10,
+        "type": "multi-hop",
+        "question": "Кто описывал проблемы с платежами через СБП?",
+        "score": 0.3333333333333333,
+        "gold": [
+          "cloudpay_dev_ivan",
+          "cloudpay_ops_anna",
+          "cloudpay_support_elena"
+        ],
+        "retrieved_sources": [
+          "cloudpay_ops_anna",
+          "cloudpay_pm_kate",
+          "cloudpay_sec_svetlana",
+          "cloudpay_dev_petr",
+          "cloudpay_ops_anna"
+        ],
+        "retrieved_ids": [
+          "cloudpay_ops_anna__1",
+          "cloudpay_pm_kate__3",
+          "cloudpay_sec_svetlana__2",
+          "cloudpay_dev_petr__3",
+          "cloudpay_ops_anna__0"
+        ]
+      },
+      {
+        "id": 11,
+        "type": "точный артикул",
+        "question": "Кто упомянул тариф Enterprise Plus?",
+        "score": 0.0,
+        "gold": [
+          "cloudpay_ops_denis"
+        ],
+        "retrieved_sources": [
+          "cloudpay_dev_petr",
+          "cloudpay_dev_petr",
+          "cloudpay_dev_petr",
+          "cloudpay_pm_kate",
+          "cloudpay_support_elena"
+        ],
+        "retrieved_ids": [
+          "cloudpay_dev_petr__0",
+          "cloudpay_dev_petr__2",
+          "cloudpay_dev_petr__3",
+          "cloudpay_pm_kate__3",
+          "cloudpay_support_elena__1"
+        ]
+      },
+      {
+        "id": 12,
+        "type": "перефраз",
+        "question": "У кого клиенты сталкивались с повторным списанием денег?",
+        "score": 1.0,
+        "gold": [
+          "cloudpay_support_elena"
+        ],
+        "retrieved_sources": [
+          "cloudpay_pm_kate",
+          "cloudpay_dev_petr",
+          "cloudpay_dev_ivan",
+          "cloudpay_support_elena",
+          "cloudpay_sec_svetlana"
+        ],
+        "retrieved_ids": [
+          "cloudpay_pm_kate__3",
+          "cloudpay_dev_petr__3",
+          "cloudpay_dev_ivan__4",
+          "cloudpay_support_elena__0",
+          "cloudpay_sec_svetlana__2"
+        ]
+      }
+    ]
+  }
+}

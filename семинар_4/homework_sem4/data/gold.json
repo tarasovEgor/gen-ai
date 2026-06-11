@@ -1,0 +1,88 @@
+[
+  {
+    "id": 1,
+    "type": "прямой",
+    "question": "Кто жаловался на задержку webhook?",
+    "gold_sources": ["cloudpay_dev_ivan", "cloudpay_pm_kate"],
+    "note": "слово «webhook» / «задержка webhook» в явном виде"
+  },
+  {
+    "id": 2,
+    "type": "синоним",
+    "question": "Кто ругался на скорость API в часы пик?",
+    "gold_sources": ["cloudpay_ops_denis"],
+    "note": "«тормозит», «лагает», «ползёт» — синонимы latency"
+  },
+  {
+    "id": 3,
+    "type": "точный артикул",
+    "question": "Кто упомянул OAuth 2.1?",
+    "gold_sources": ["cloudpay_dev_maria"],
+    "note": "точное название протокола"
+  },
+  {
+    "id": 4,
+    "type": "multi-hop",
+    "question": "Кто жаловался одновременно на цену тарифа Enterprise и на качество документации?",
+    "gold_sources": ["cloudpay_dev_petr"],
+    "note": "Пётр: 29 900 дорого + устаревшая дока webhook HMAC"
+  },
+  {
+    "id": 5,
+    "type": "позитив",
+    "question": "Кто хвалил sandbox CloudPay?",
+    "gold_sources": ["cloudpay_dev_maria", "cloudpay_dev_ivan"],
+    "note": "Мария — основной позитив; Иван — sandbox мгновенный"
+  },
+  {
+    "id": 6,
+    "type": "перефраз",
+    "question": "У кого были проблемы с подключением к API из-за ключей или токенов?",
+    "gold_sources": ["cloudpay_support_oleg"],
+    "note": "перефраз «авторизация» → истёкший токен, неверный API key"
+  },
+  {
+    "id": 7,
+    "type": "multi-hop",
+    "question": "Кто одновременно использует CloudPay и Stripe?",
+    "gold_sources": ["cloudpay_sec_svetlana"],
+    "note": "мульти-провайдерная схема в одном интервью"
+  },
+  {
+    "id": 8,
+    "type": "синоним",
+    "question": "Кто был недоволен старым интерфейсом личного кабинета?",
+    "gold_sources": ["cloudpay_pm_kate"],
+    "note": "«UI как из 2015», «кнопки спрятаны» — синонимы плохого интерфейса",
+    "hard": true
+  },
+  {
+    "id": 9,
+    "type": "точный артикул",
+    "question": "Кто упомянул PCI DSS Level 1?",
+    "gold_sources": ["cloudpay_ops_anna", "cloudpay_sec_nikita"],
+    "note": "юридический/комплаенс термин"
+  },
+  {
+    "id": 10,
+    "type": "multi-hop",
+    "question": "Кто описывал проблемы с платежами через СБП?",
+    "gold_sources": ["cloudpay_dev_ivan", "cloudpay_ops_anna", "cloudpay_support_elena"],
+    "note": "ответ собирается из 3 документов: webhook СБП, дубли, KB устарела",
+    "hard": true
+  },
+  {
+    "id": 11,
+    "type": "точный артикул",
+    "question": "Кто упомянул тариф Enterprise Plus?",
+    "gold_sources": ["cloudpay_ops_denis"],
+    "note": "точное название тарифа"
+  },
+  {
+    "id": 12,
+    "type": "перефраз",
+    "question": "У кого клиенты сталкивались с повторным списанием денег?",
+    "gold_sources": ["cloudpay_support_elena"],
+    "note": "перефраз «двойное списание»"
+  }
+]
