@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Полный прогон для 8 баллов. Только один процесс — без параллельных LLM-задач.
 set -euo pipefail
 cd "$(dirname "$0")"
 PY="uv run python"

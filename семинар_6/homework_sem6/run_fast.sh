@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Быстрый прогон (~25–40 мин): минимум N=3 eval, критик N=10, без лишних пауз.
 set -euo pipefail
 cd "$(dirname "$0")"
 PY="uv run python"

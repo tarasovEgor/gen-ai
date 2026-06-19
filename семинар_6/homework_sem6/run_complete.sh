@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Полный прогон для 8 баллов. Один процесс, без параллели.
 set -uo pipefail
 cd "$(dirname "$0")"
 export PYTHONUNBUFFERED=1
