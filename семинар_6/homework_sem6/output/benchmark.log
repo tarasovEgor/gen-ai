@@ -1,42 +1,8 @@
 Benchmark: Q1_USD_ratio — уже есть, пропуск
 Benchmark: Q4_three_fx...
-Traceback (most recent call last):
-  File "/Users/georgetarasov/Desktop/python_inteerview/gen-ai/семинар_6/homework_sem6/benchmark_parallel.py", line 72, in <module>
-    main()
-  File "/Users/georgetarasov/Desktop/python_inteerview/gen-ai/семинар_6/homework_sem6/benchmark_parallel.py", line 64, in main
-    out[b["name"]] = bench_query(b["query"])
-                     ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/georgetarasov/Desktop/python_inteerview/gen-ai/семинар_6/homework_sem6/benchmark_parallel.py", line 29, in bench_query
-    plan = with_retry(lambda: planner(query))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/georgetarasov/Desktop/python_inteerview/gen-ai/семинар_6/homework_sem6/retry_util.py", line 24, in with_retry
-    raise last
-  File "/Users/georgetarasov/Desktop/python_inteerview/gen-ai/семинар_6/homework_sem6/retry_util.py", line 15, in with_retry
-    return fn()
-           ^^^^
-  File "/Users/georgetarasov/Desktop/python_inteerview/gen-ai/семинар_6/homework_sem6/benchmark_parallel.py", line 29, in <lambda>
-    plan = with_retry(lambda: planner(query))
-                              ^^^^^^^^^^^^^^
-  File "/Users/georgetarasov/Desktop/python_inteerview/gen-ai/семинар_6/homework_sem6/planner.py", line 55, in planner
-    return client.chat.completions.create(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/georgetarasov/Desktop/python_inteerview/gen-ai/семинар_6/homework_sem6/llm_client.py", line 237, in create
-    raise last_err
-  File "/Users/georgetarasov/Desktop/python_inteerview/gen-ai/семинар_6/homework_sem6/llm_client.py", line 214, in create
-    resp = _call(thinking_kw)
-           ^^^^^^^^^^^^^^^^^^
-  File "/Users/georgetarasov/Desktop/python_inteerview/gen-ai/семинар_6/homework_sem6/llm_client.py", line 191, in _call
-    return self._c.chat.completions.create(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/georgetarasov/Desktop/python_inteerview/gen-ai/.venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 298, in wrapper
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/georgetarasov/Desktop/python_inteerview/gen-ai/.venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1215, in create
-    return self._post(
-           ^^^^^^^^^^^
-  File "/Users/georgetarasov/Desktop/python_inteerview/gen-ai/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1332, in post
-    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/georgetarasov/Desktop/python_inteerview/gen-ai/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1105, in request
-    raise self._make_status_error_from_response(err.response) from None
-openai.RateLimitError: Error code: 429 - {'detail': 'Too many requests'}
+  [retry 1/20] 429, жду 15с...
+  [retry 2/20] 429, жду 30с...
+  [retry 3/20] 429, жду 45с...
+  [retry 4/20] 429, жду 60с...
+  [retry 5/20] 429, жду 75с...
+  [retry 6/20] 429, жду 90с...
