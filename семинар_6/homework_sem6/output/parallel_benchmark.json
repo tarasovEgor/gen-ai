@@ -1,0 +1,12 @@
+{
+  "Q1_USD_ratio": {
+    "level0_size": 2,
+    "sequential_sec": 5.395,
+    "parallel_sec": 3.161,
+    "speedup": 1.71,
+    "subquestions": [
+      "Какой курс USD к рублю на 2022-01-01?",
+      "Какой курс USD к рублю на сегодня?"
+    ]
+  }
+}
