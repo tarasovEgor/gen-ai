@@ -223,12 +223,22 @@ def main():
         cases = [c for c in CASES if c["id"] in wanted]
 
     print(f"Eval С6: {len(cases)} кейсов × {n} × 3{' [TURBO]' if args.turbo else (' [FAST]' if args.fast else '')}\n")
-    results = []
+    results: list[dict] = []
     out = Path(__file__).parent / "output" / "eval_pwc_results.json"
     out.parent.mkdir(exist_ok=True)
+    if out.exists():
+        try:
+            results = json.loads(out.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            results = []
+    done_ids = {r["id"] for r in results}
+
     for c in cases:
+        if c["id"] in done_ids:
+            print(f"  {c['id']}: уже в {out.name}, пропуск")
+            continue
         r = run_case(c, n=n, fast=args.fast or args.turbo, turbo=args.turbo)
-        results.append(r)
+        results = [x for x in results if x["id"] != c["id"]] + [r]
         out.write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
         print(
             f"  {r['id']}: single {r['single']['pass']}/{n}  "
@@ -239,15 +249,13 @@ def main():
     print("=" * 72)
     print(f"{'id':<4} {'single':>8} {'pwc':>8} {'pwc+val':>8}  query")
     print("-" * 72)
-    for r in results:
+    for r in sorted(results, key=lambda x: x["id"]):
         print(
             f"{r['id']:<4} {r['single']['pass']}/{n:>6} "
             f"{r['pwc_no_validator']['pass']}/{n:>6} "
             f"{r['pwc_validator']['pass']}/{n:>6}  {r['query'][:45]}..."
         )
 
-    out = Path(__file__).parent / "output" / "eval_pwc_results.json"
-    out.parent.mkdir(exist_ok=True)
     out.write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\nРезультаты: {out}")
 

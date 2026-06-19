@@ -10,8 +10,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from critic import critic
-from retry_util import with_retry
+from critic import critic, critic_rules
 from schemas_pwc import Plan, SubQuestion, WorkerAnswer
 
 FAKE_BROKEN = [
@@ -186,13 +185,21 @@ def main():
     ap.add_argument("-n", type=int, default=10)
     ap.add_argument("--quick", action="store_true", help="n=2")
     ap.add_argument("--case", type=int, default=-1, help="только кейс 0..4")
+    ap.add_argument("--rules", action="store_true", help="rule-based критик (без LLM, strict≈T0.7)")
     ap.add_argument("--pause", type=float, default=8.0)
     args = ap.parse_args()
     n = 2 if args.quick else args.n
 
+    def _critic(case, temp: float):
+        if args.rules:
+            return critic_rules(case["question"], case["plan"], case["answers"], strict=(temp >= 0.5))
+        return with_retry(
+            lambda c=case, t=temp: critic(c["question"], c["plan"], c["answers"], temperature=t)
+        )
+
     cases = FAKE_BROKEN if args.case < 0 else [FAKE_BROKEN[args.case]]
 
-    print(f"Замер: {len(cases)} кейсов × {n} прогонов\n")
+    print(f"Замер: {len(cases)} кейсов × {n} {'[rules]' if args.rules else '[LLM]'}\n")
     results_path = Path(__file__).parent / "output" / "critic_compliance.json"
     results_path.parent.mkdir(exist_ok=True)
     existing: list[dict] = []
@@ -208,21 +215,20 @@ def main():
         false_accept_0 = 0
         false_accept_07 = 0
         for _ in range(n):
-            v0 = with_retry(
-                lambda c=case: critic(c["question"], c["plan"], c["answers"], temperature=0.0)
-            )
-            time.sleep(args.pause)
-            v7 = with_retry(
-                lambda c=case: critic(c["question"], c["plan"], c["answers"], temperature=0.7)
-            )
+            v0 = _critic(case, 0.0)
+            if not args.rules and args.pause:
+                time.sleep(args.pause)
+            v7 = _critic(case, 0.7)
+            if not args.rules and args.pause:
+                time.sleep(args.pause)
             false_accept_0 += int(v0.ok)
             false_accept_07 += int(v7.ok)
-            time.sleep(args.pause)
         row = {
             "case": case["name"],
             "false_accept_t0": false_accept_0,
             "false_accept_t07": false_accept_07,
             "runs": n,
+            "mode": "rules" if args.rules else "llm",
         }
         results = [r for r in results if r["case"] != case["name"]] + [row]
         results_path.write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")

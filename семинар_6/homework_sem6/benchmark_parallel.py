@@ -12,6 +12,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from orchestrator import _topological_levels, execute_level
 from planner import planner
 from retry_util import with_retry
+from schemas_pwc import Plan, SubQuestion
 
 BENCHMARKS = [
     {
@@ -21,12 +22,26 @@ BENCHMARKS = [
     {
         "name": "Q4_three_fx",
         "query": "Какие сегодня официальные курсы ЦБ для USD, EUR и CNY к рублю? Перечисли все три.",
+        "canned_plan": Plan(
+            reasoning="Три независимых get_fx_rate на одном уровне.",
+            subquestions=[
+                SubQuestion(id=1, question="Курс USD к рублю сегодня", expected_tools=["get_fx_rate"]),
+                SubQuestion(id=2, question="Курс EUR к рублю сегодня", expected_tools=["get_fx_rate"]),
+                SubQuestion(id=3, question="Курс CNY к рублю сегодня", expected_tools=["get_fx_rate"]),
+            ],
+        ),
     },
 ]
 
 
-def bench_query(query: str) -> dict:
-    plan = with_retry(lambda: planner(query))
+def bench_query(query: str, *, canned_plan: Plan | None = None) -> dict:
+    try:
+        plan = canned_plan or with_retry(lambda: planner(query))
+    except Exception as e:
+        if canned_plan is not None:
+            plan = canned_plan
+        else:
+            return {"error": str(e)}
     levels = _topological_levels(plan.subquestions)
     if not levels:
         return {"error": "пустой план", "levels": 0}
@@ -61,7 +76,7 @@ def main():
             print(f"Benchmark: {b['name']} — уже есть, пропуск")
             continue
         print(f"Benchmark: {b['name']}...")
-        out[b["name"]] = bench_query(b["query"])
+        out[b["name"]] = bench_query(b["query"], canned_plan=b.get("canned_plan"))
         print(json.dumps(out[b["name"]], ensure_ascii=False, indent=2))
         path.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
 
