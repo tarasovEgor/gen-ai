@@ -1,0 +1,376 @@
+[
+  {
+    "id": 1,
+    "type": "прямой",
+    "question": "Кто жаловался на задержку webhook?",
+    "mode": "retrieval_only",
+    "source_recall": 1.0,
+    "retrieved_sources": [
+      "cloudpay_pm_kate",
+      "cloudpay_dev_ivan",
+      "cloudpay_ops_denis",
+      "cloudpay_sec_nikita",
+      "cloudpay_support_oleg",
+      "cloudpay_sec_svetlana",
+      "cloudpay_ops_anna",
+      "cloudpay_support_elena",
+      "cloudpay_dev_petr",
+      "cloudpay_dev_maria"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  },
+  {
+    "id": 2,
+    "type": "синоним",
+    "question": "Кто ругался на скорость API в часы пик?",
+    "mode": "retrieval_only",
+    "source_recall": 1.0,
+    "retrieved_sources": [
+      "cloudpay_dev_ivan",
+      "cloudpay_ops_denis"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  },
+  {
+    "id": 3,
+    "type": "точный артикул",
+    "question": "Кто упомянул OAuth 2.1?",
+    "mode": "retrieval_only",
+    "source_recall": 1.0,
+    "retrieved_sources": [
+      "cloudpay_dev_ivan",
+      "cloudpay_ops_anna",
+      "cloudpay_dev_petr",
+      "cloudpay_dev_maria"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  },
+  {
+    "id": 4,
+    "type": "multi-hop",
+    "question": "Кто жаловался одновременно на цену тарифа Enterprise и на качество документации?",
+    "mode": "retrieval_only",
+    "source_recall": 1.0,
+    "retrieved_sources": [
+      "cloudpay_pm_kate",
+      "cloudpay_dev_ivan",
+      "cloudpay_ops_denis",
+      "cloudpay_sec_nikita",
+      "cloudpay_support_oleg",
+      "cloudpay_sec_svetlana",
+      "cloudpay_ops_anna",
+      "cloudpay_support_elena",
+      "cloudpay_dev_petr",
+      "cloudpay_dev_maria"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  },
+  {
+    "id": 5,
+    "type": "позитив",
+    "question": "Кто хвалил sandbox CloudPay?",
+    "mode": "retrieval_only",
+    "source_recall": 1.0,
+    "retrieved_sources": [
+      "cloudpay_pm_kate",
+      "cloudpay_dev_ivan",
+      "cloudpay_ops_denis",
+      "cloudpay_sec_nikita",
+      "cloudpay_support_oleg",
+      "cloudpay_sec_svetlana",
+      "cloudpay_ops_anna",
+      "cloudpay_support_elena",
+      "cloudpay_dev_petr",
+      "cloudpay_dev_maria"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  },
+  {
+    "id": 6,
+    "type": "перефраз",
+    "question": "У кого были проблемы с подключением к API из-за ключей или токенов?",
+    "mode": "retrieval_only",
+    "source_recall": 1.0,
+    "retrieved_sources": [
+      "cloudpay_pm_kate",
+      "cloudpay_ops_denis",
+      "cloudpay_support_oleg",
+      "cloudpay_sec_svetlana",
+      "cloudpay_dev_maria"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  },
+  {
+    "id": 7,
+    "type": "multi-hop",
+    "question": "Кто одновременно использует CloudPay и Stripe?",
+    "mode": "retrieval_only",
+    "source_recall": 1.0,
+    "retrieved_sources": [
+      "cloudpay_pm_kate",
+      "cloudpay_dev_ivan",
+      "cloudpay_sec_nikita",
+      "cloudpay_sec_svetlana",
+      "cloudpay_ops_anna",
+      "cloudpay_dev_petr",
+      "cloudpay_dev_maria"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  },
+  {
+    "id": 8,
+    "type": "синоним",
+    "question": "Кто был недоволен старым интерфейсом личного кабинета?",
+    "mode": "retrieval_only",
+    "source_recall": 1.0,
+    "retrieved_sources": [
+      "cloudpay_dev_maria",
+      "cloudpay_support_elena",
+      "cloudpay_dev_petr",
+      "cloudpay_pm_kate"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  },
+  {
+    "id": 9,
+    "type": "точный артикул",
+    "question": "Кто упомянул PCI DSS Level 1?",
+    "mode": "retrieval_only",
+    "source_recall": 1.0,
+    "retrieved_sources": [
+      "cloudpay_ops_anna",
+      "cloudpay_sec_nikita"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  },
+  {
+    "id": 10,
+    "type": "multi-hop",
+    "question": "Кто описывал проблемы с платежами через СБП?",
+    "mode": "retrieval_only",
+    "source_recall": 1.0,
+    "retrieved_sources": [
+      "cloudpay_pm_kate",
+      "cloudpay_dev_ivan",
+      "cloudpay_sec_svetlana",
+      "cloudpay_ops_anna",
+      "cloudpay_support_elena",
+      "cloudpay_dev_petr"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  },
+  {
+    "id": 11,
+    "type": "точный артикул",
+    "question": "Кто упомянул тариф Enterprise Plus?",
+    "mode": "retrieval_only",
+    "source_recall": 1.0,
+    "retrieved_sources": [
+      "cloudpay_pm_kate",
+      "cloudpay_dev_ivan",
+      "cloudpay_ops_denis",
+      "cloudpay_sec_nikita",
+      "cloudpay_support_oleg",
+      "cloudpay_sec_svetlana",
+      "cloudpay_ops_anna",
+      "cloudpay_support_elena",
+      "cloudpay_dev_petr",
+      "cloudpay_dev_maria"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  },
+  {
+    "id": 12,
+    "type": "перефраз",
+    "question": "У кого клиенты сталкивались с повторным списанием денег?",
+    "mode": "retrieval_only",
+    "source_recall": 1.0,
+    "retrieved_sources": [
+      "cloudpay_pm_kate",
+      "cloudpay_dev_ivan",
+      "cloudpay_sec_svetlana",
+      "cloudpay_support_elena",
+      "cloudpay_dev_petr"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  },
+  {
+    "id": 13,
+    "type": "negative",
+    "question": "Кто жаловался на интеграцию CloudPay с блокчейном?",
+    "mode": "retrieval_only",
+    "source_recall": 1.0,
+    "retrieved_sources": [
+      "cloudpay_ops_anna",
+      "cloudpay_sec_nikita",
+      "cloudpay_sec_svetlana"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  },
+  {
+    "id": 14,
+    "type": "negative",
+    "question": "Кто обсуждал выпуск NFT через CloudPay?",
+    "mode": "retrieval_only",
+    "source_recall": 1.0,
+    "retrieved_sources": [
+      "cloudpay_ops_anna",
+      "cloudpay_dev_ivan",
+      "cloudpay_sec_nikita",
+      "cloudpay_sec_svetlana"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  },
+  {
+    "id": 15,
+    "type": "синоним",
+    "question": "У кого тормозили callback-уведомления после оплаты?",
+    "mode": "retrieval_only",
+    "source_recall": 0.5,
+    "retrieved_sources": [
+      "cloudpay_ops_anna",
+      "cloudpay_support_elena",
+      "cloudpay_dev_ivan"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  },
+  {
+    "id": 16,
+    "type": "multi-hop",
+    "question": "Кто жаловался на устаревшую документацию HMAC для webhook?",
+    "mode": "retrieval_only",
+    "source_recall": 1.0,
+    "retrieved_sources": [
+      "cloudpay_pm_kate",
+      "cloudpay_dev_ivan",
+      "cloudpay_ops_denis",
+      "cloudpay_sec_nikita",
+      "cloudpay_support_oleg",
+      "cloudpay_sec_svetlana",
+      "cloudpay_ops_anna",
+      "cloudpay_support_elena",
+      "cloudpay_dev_petr",
+      "cloudpay_dev_maria"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  },
+  {
+    "id": 17,
+    "type": "прямой",
+    "question": "Кто упоминал Kubernetes в контексте платёжного шлюза?",
+    "mode": "retrieval_only",
+    "source_recall": 1.0,
+    "retrieved_sources": [
+      "cloudpay_pm_kate",
+      "cloudpay_sec_svetlana",
+      "cloudpay_ops_anna",
+      "cloudpay_support_elena",
+      "cloudpay_dev_petr"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  },
+  {
+    "id": 18,
+    "type": "перефраз",
+    "question": "У кого возврат денег клиентам занимал несколько дней?",
+    "mode": "retrieval_only",
+    "source_recall": 1.0,
+    "retrieved_sources": [
+      "cloudpay_dev_petr",
+      "cloudpay_support_elena",
+      "cloudpay_dev_ivan",
+      "cloudpay_pm_kate"
+    ],
+    "pass": true,
+    "path": {
+      "retrieval_calls": 1,
+      "agent_steps": 0,
+      "tools_used": []
+    }
+  }
+]

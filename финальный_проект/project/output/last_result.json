@@ -1,0 +1,235 @@
+{
+  "question": "У кого возврат денег клиентам занимал несколько дней?",
+  "router": {
+    "question_type": "multi_hop",
+    "reasoning": "составной вопрос / несколько тем",
+    "retrieval_k": 12
+  },
+  "answer": {
+    "question": "У кого возврат денег клиентам занимал несколько дней?",
+    "speakers": [
+      "Елена"
+    ],
+    "summary": "Возврат денег клиентам занимал 3-5 дней у команды поддержки мерчантов CloudPay, о чем рассказала тимлид поддержки Елена. Основной проблемой были случаи двойного списания, когда деньги списывались дважды, а webhook приходил один раз.",
+    "citations": [
+      {
+        "doc_id": "cloudpay_support_elena__0",
+        "quote": "— Топ-жалоба — двойное списание. Деньги дважды, webhook один. 23 кейса за квартал, возврат 3-5 дней.",
+        "speaker": "Елена"
+      }
+    ],
+    "confidence": 0.95,
+    "found_in_corpus": true,
+    "chunk_ids": [
+      "cloudpay_pm_kate__3",
+      "cloudpay_dev_ivan__1",
+      "cloudpay_dev_petr__3",
+      "cloudpay_support_elena__0",
+      "cloudpay_dev_ivan__4",
+      "cloudpay_dev_petr__7",
+      "cloudpay_ops_anna__11",
+      "cloudpay_pm_kate__11",
+      "cloudpay_sec_nikita__10",
+      "cloudpay_support_elena__6",
+      "cloudpay_support_elena__11",
+      "cloudpay_support_oleg__5"
+    ]
+  },
+  "judge": {
+    "items": [
+      {
+        "criterion": "source_coverage",
+        "verdict": "supported",
+        "reason": "Ответ содержит упоминание тимлида поддержки Елены из команды CloudPay, что соответствует ожидаемому спикеру и источнику."
+      },
+      {
+        "criterion": "quote_grounding",
+        "verdict": "supported",
+        "reason": "Цитата дословно отражает проблему двойного списания и количество кейсов, что соответствует заявленному в ответе."
+      },
+      {
+        "criterion": "question_fit",
+        "verdict": "supported",
+        "reason": "Ответ прямо отвечает на вопрос, указывая, что возврат денег занимал 3-5 дней у команды поддержки CloudPay."
+      }
+    ],
+    "overall": "pass",
+    "ghost_citations": 0
+  },
+  "path": {
+    "retrieval_calls": 2,
+    "agent_steps": 6,
+    "tools_used": [
+      "grep_corpus",
+      "grep_corpus",
+      "grep_corpus",
+      "grep_corpus",
+      "search_kb"
+    ],
+    "chunks_read": 17,
+    "prompt_tokens": 7716,
+    "completion_tokens": 259,
+    "latency_sec": 13.626
+  },
+  "retrieved_sources": [
+    "cloudpay_dev_petr",
+    "cloudpay_support_elena",
+    "cloudpay_dev_ivan",
+    "cloudpay_pm_kate",
+    "cloudpay_support_oleg",
+    "cloudpay_ops_anna",
+    "cloudpay_sec_nikita"
+  ],
+  "trace": [
+    {
+      "step": 0,
+      "tool": "grep_corpus",
+      "args": {
+        "pattern": "возврат"
+      },
+      "obs": {
+        "pattern": "возврат",
+        "hits": [
+          {
+            "doc_id": "cloudpay_support_elena",
+            "pattern": "возврат",
+            "snippet": "да. 120 мерчантов, вижу все тикеты.\n\n— Топ-жалоба — двойное списание. Деньги дважды, webhook один. 23 кейса за квартал, возврат 3-5 дней.\n\n— Вторая — платёж завис в pending. Деньги ушли, заказ нет. Webhook потерялся.\n\n— Enterprise support — 2 часа"
+          }
+        ],
+        "count": 1
+      }
+    },
+    {
+      "step": 0,
+      "tool": "grep_corpus",
+      "args": {
+        "pattern": "деньги"
+      },
+      "obs": {
+        "pattern": "деньги",
+        "hits": [
+          {
+            "doc_id": "cloudpay_support_elena",
+            "pattern": "деньги",
+            "snippet": "имлид поддержки мерчантов CloudPay\n\n— Елена, 34 года. 120 мерчантов, вижу все тикеты.\n\n— Топ-жалоба — двойное списание. Деньги дважды, webhook один. 23 кейса за квартал, возврат 3-5 дней.\n\n— Вторая — платёж завис в pending. Деньги ушли, заказ нет"
+          }
+        ],
+        "count": 1
+      }
+    },
+    {
+      "step": 0,
+      "tool": "grep_corpus",
+      "args": {
+        "pattern": "клиент"
+      },
+      "obs": {
+        "pattern": "клиент",
+        "hits": [
+          {
+            "doc_id": "cloudpay_dev_ivan",
+            "pattern": "клиент",
+            "snippet": "Мы принимаем оплату через CloudPay с прошлого года. Стек — Python, Django, Celery.\n\n— Главная боль — задержка webhook. Клиент оплачивает заказ, сервер ждёт callback, чтобы пометить заказ «оплачен». В доке «до 3 секунд», на практике 40-90 секунд."
+          },
+          {
+            "doc_id": "cloudpay_dev_maria",
+            "pattern": "клиент",
+            "snippet": "ency p99, chargeback rate, refund volume. Дашборд в Metabase, алерты в Slack #payments. При аномалии — war room, статус клиентам в status page магазина.\n\n— Обучение команды: онбординг нового разработчика — 3 дня чтения docs CloudPay, 2 дня sandbo"
+          },
+          {
+            "doc_id": "cloudpay_dev_petr",
+            "pattern": "клиент",
+            "snippet": "# Пётр · CTO, SaaS логистики · интервью CloudPay\n\n— Пётр, 41 год, CTO логистического SaaS. 200 B2B-клиентов, подписки. CloudPay с января.\n\n— Две претензии: цена и документация. Enterprise — 29 900 руб/мес дорого. Recurring pa"
+          },
+          {
+            "doc_id": "cloudpay_ops_anna",
+            "pattern": "клиент",
+            "snippet": "ency p99, chargeback rate, refund volume. Дашборд в Metabase, алерты в Slack #payments. При аномалии — war room, статус клиентам в status page магазина.\n\n— Обучение команды: онбординг нового разработчика — 3 дня чтения docs CloudPay, 2 дня sandbo"
+          },
+          {
+            "doc_id": "cloudpay_ops_denis",
+            "pattern": "клиент",
+            "snippet": "ency p99, chargeback rate, refund volume. Дашборд в Metabase, алерты в Slack #payments. При аномалии — war room, статус клиентам в status page магазина.\n\n— Обучение команды: онбординг нового разработчика — 3 дня чтения docs CloudPay, 2 дня sandbo"
+          },
+          {
+            "doc_id": "cloudpay_pm_kate",
+            "pattern": "клиент",
+            "snippet": "ency p99, chargeback rate, refund volume. Дашборд в Metabase, алерты в Slack #payments. При аномалии — war room, статус клиентам в status page магазина.\n\n— Обучение команды: онбординг нового разработчика — 3 дня чтения docs CloudPay, 2 дня sandbo"
+          },
+          {
+            "doc_id": "cloudpay_sec_nikita",
+            "pattern": "клиент",
+            "snippet": "ency p99, chargeback rate, refund volume. Дашборд в Metabase, алерты в Slack #payments. При аномалии — war room, статус клиентам в status page магазина.\n\n— Обучение команды: онбординг нового разработчика — 3 дня чтения docs CloudPay, 2 дня sandbo"
+          },
+          {
+            "doc_id": "cloudpay_sec_svetlana",
+            "pattern": "клиент",
+            "snippet": "ency p99, chargeback rate, refund volume. Дашборд в Metabase, алерты в Slack #payments. При аномалии — war room, статус клиентам в status page магазина.\n\n— Обучение команды: онбординг нового разработчика — 3 дня чтения docs CloudPay, 2 дня sandbo"
+          },
+          {
+            "doc_id": "cloudpay_support_elena",
+            "pattern": "клиент",
+            "snippet": "ency p99, chargeback rate, refund volume. Дашборд в Metabase, алерты в Slack #payments. При аномалии — war room, статус клиентам в status page магазина.\n\n— Обучение команды: онбординг нового разработчика — 3 дня чтения docs CloudPay, 2 дня sandbo"
+          },
+          {
+            "doc_id": "cloudpay_support_oleg",
+            "pattern": "клиент",
+            "snippet": "чью.\n\n— «Не могу подключиться», «вчера работало» — 70% истёкший токен или неверный key.\n\n— Интервьюер: Типичный кейс?\n— Клиент скопировал secret в .env с лишним пробелом. 2 часа дебага. cloudpay-cli auth test находит за минуту.\n\n— Интервьюер: Док"
+          }
+        ],
+        "count": 10
+      }
+    },
+    {
+      "step": 0,
+      "tool": "grep_corpus",
+      "args": {
+        "pattern": "несколько дней"
+      },
+      "obs": {
+        "pattern": "несколько дней",
+        "hits": [],
+        "count": 0
+      }
+    },
+    {
+      "step": 1,
+      "tool": "search_kb",
+      "args": {
+        "query": "возврат денег клиентам несколько дней"
+      },
+      "obs": {
+        "query": "возврат денег клиентам несколько дней",
+        "hits": [
+          {
+            "chunk_id": "cloudpay_dev_ivan__1",
+            "source": "cloudpay_dev_ivan",
+            "excerpt": "— Главная боль — задержка webhook. Клиент оплачивает заказ, сервер ждёт callback, чтобы пометить заказ «оплачен». В доке «до 3 секунд», на практике 40-90 секунд. Black Friday — webhook через две минуты.\n\n— Тариф Developer Pro — 4900 руб/мес, 100 000 транзакций. Stripe webhook быстрее, но дороже для нашего объёма."
+          },
+          {
+            "chunk_id": "cloudpay_pm_kate__3",
+            "source": "cloudpay_pm_kate",
+            "excerpt": "— Внутренний дашборд: 1800 активных мерчантов, 45M транзакций/мес.\n\n— Честно: знаем проблемы, чиним. Webhook — P0."
+          },
+          {
+            "chunk_id": "cloudpay_dev_petr__3",
+            "source": "cloudpay_dev_petr",
+            "excerpt": "— Интервьюер: Команда интеграции?\n— 2 backend, 1 DevOps, я сам архитектор. 6 недель на полную миграцию с самописного биллинга.\n\n— Billing flow: invoice → payment link → webhook → activate subscription. Cron для renewal раз в сутки. Failed payment — 3 retry.\n\n— MRR 4.2 млн руб. CloudPay commission ~1.8%. Enterprise fixed fee съедает маржу на малых клиентах."
+          },
+          {
+            "chunk_id": "cloudpay_support_elena__0",
+            "source": "cloudpay_support_elena",
+            "excerpt": "# Елена · тимлид поддержки мерчантов CloudPay\n\n— Елена, 34 года. 120 мерчантов, вижу все тикеты.\n\n— Топ-жалоба — двойное списание. Деньги дважды, webhook один. 23 кейса за квартал, возврат 3-5 дней.\n\n— Вторая — платёж завис в pending. Деньги ушли, заказ нет. Webhook потерялся.\n\n— Enterprise support — 2 часа. Startup — сутки."
+          },
+          {
+            "chunk_id": "cloudpay_dev_petr__7",
+            "source": "cloudpay_dev_petr",
+            "excerpt": "— Метрики, которые смотрим еженедельно: conversion checkout, decline rate, webhook lag p95, API latency p99, chargeback rate, refund volume. Дашборд в Metabase, алерты в Slack #payments. При аномалии — war room, статус клиентам в status page магазина."
+          }
+        ],
+        "count": 5
+      }
+    }
+  ],
+  "ghosts": []
+}

@@ -1,0 +1,25 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9446.95it/s]
+Eval: 7 кейсов
+
+  [11] точный артикул: Кто упомянул тариф Enterprise Plus?...
+       ✓ recall=1.0 judge=pass
+  [12] перефраз: У кого клиенты сталкивались с повторным списанием ...
+       ✓ recall=1.0 judge=pass
+  [14] negative: Кто обсуждал выпуск NFT через CloudPay?...
+       ✓ recall=1.0 judge=pass
+  [15] синоним: У кого тормозили callback-уведомления после оплаты...
+       ✓ recall=0.5 judge=pass
+  [16] multi-hop: Кто жаловался на устаревшую документацию HMAC для ...
+       ✓ recall=1.0 judge=pass
+  [17] прямой: Кто упоминал Kubernetes в контексте платёжного шлю...
+       ✓ recall=1.0 judge=pass
+  [18] перефраз: У кого возврат денег клиентам занимал несколько дн...
+       ✓ recall=1.0 judge=pass
+
+============================================================
+Pass-rate: 18/18 (100%)
+Ghost-цитат всего: 0
+Время: 97.9с
+Сохранено: /Users/georgetarasov/Desktop/python_inteerview/gen-ai/финальный_проект/project/output/eval_results.json
+Ghost-report: /Users/georgetarasov/Desktop/python_inteerview/gen-ai/финальный_проект/project/output/hallucination_report.json
